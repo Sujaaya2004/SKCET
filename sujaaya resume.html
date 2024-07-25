@@ -7,9 +7,6 @@
                 background-repeat: no-repeat;
                 background-size: cover;
             }
-div{
-    
-}
 .p1{
     height: 10px;
                 display: flex;
@@ -19,12 +16,12 @@ div{
                 padding: 25px;
                 color: rgb(3, 12, 12); 
 }
-ul{
+.ul{
     display:flex;
     list-style-type: none;
     
 }
-li{
+.li{
     padding-right: 100px;
     display: inline;
     }
@@ -35,30 +32,131 @@ li{
     section {
     padding: 50px 0;
 }
+.abt1{
+display: flex;
+align-items: center;
+padding: 20px;
+}
+.abt2{
+    margin-left: 20px;
+}
+.grid1{
+display: grid;
+grid-template-columns: auto auto auto;
+grid-template-rows: 50px 50px;
+gap: 10px;
+background-color: black;
+padding: 10px;
+}
+.grid2{
+background-color: antiquewhite;
+text-align: center;
+padding: 20px 0;
+}
+.team1{
+list-style-type: circle;
+}
+.team2{
+list-style-type: upper-roman;
+}
+.team3{
+list-style-type: disc;
+}
+.team4{
+list-style-type: armenian;
+}
+.t1{
+    color: black;
+}
+.cbox{
+    border: 2px solid black;
+    padding: 20px;
+    background-color: white;
+    width: fit-content;
+}
         </style>
     </head>
     <body>
     <nav>
         <div class="p1">
             
-        <ul>
-            <li ><a href="#home">HOME</a></li>
-            <li ><a href= '#about'>ABOUT</a></li>
-            <li ><a href="#education">EDUCATION</a></li>
-            <li ><a href="#skills">SKILLS</a></li>
-            <li ><a href="#contact">CONTACT</a></li>
+        <ul class="ul">
+            <li class="li"><a href="#home">HOME</a></li>
+            <li class="li"><a href= '#about'>ABOUT</a></li>
+            <li class="li"><a href="#education">EDUCATION</a></li>
+            <li class="li"><a href="#skills">SKILLS</a></li>
+            <li class="li"><a href="#contact">CONTACT</a></li>
         </ul>
         </div>
     </nav> 
-        <center><h1 name = 'home'>SUJAAYA J</h1></center>
-        <center><h2>Hi I am Sujaaya. Welcome to my Portfolio</h2></center>
-        <a href="resume\RESUME1.docx">
-        <center>
-        <img src="images\images.jpeg" alt="pic" width="500px" height="500px" style="border: 10px solid black; padding: 10px; margin: 10px;"></a>
-        </center>
-        <section id="about">
-      <h1>PERSONAL INFO</h1>
-      
+    <section id="about">
+        <div class="abt1">
+        <a href="resume\RESUME1 (1).pdf">
+        <img src="images\OIP.jpeg" alt="pic" width="500px" height="500px" style="border: 10px solid black; padding: 10px; margin: 10px;"></a>
+<div class="abt2">
+        <h1><b>SUJAAYA J</b></h1>
+        <h2>Hi I am Sujaaya. Welcome to my Portfolio</h2>
+    <p>I’m Sujaaya J, a Software Engineer. With a passion for Web Development.My journey into Web development began since my initial days of my college, sparking my curiosity and propelling me to delve deeper into the intricacies. Over the years, I’ve honed my skills.
+        In addition to my professional endeavors, I enjoy Swimming and drawing. I find inspiration in yoga and am always seeking opportunities to Grow Personally and Professionally.
+        Thank you for visiting my portfolio. I’m excited to connect and explore potential collaborations or opportunities to Web development.</p></div>
+    </div>
     </section>
+    <section id="education" >
+        <H1>EDUCATIONAL BACKGROUND</H1>
+        <div class="grid1">
+            <div class="grid2"><b>EDUCATION</b></div>
+            <div class="grid2"><b>PLACE OF STUDY</b></div>
+            <div class="grid2"><b>YEAR</b></div>
+            <div class="grid2">BE- ECE</div>
+            <div class="grid2">Sri Krishna College of Engineering and Technology</div>
+            <div class="grid2">2022-2026</div>
+            <div class="grid2">HSC</div>
+            <div class="grid2">Avila Convent MHS School</div>
+            <div class="grid2">2022</div>
+            <div class="grid2">SSLC</div>
+            <div class="grid2">Avila Convent MHS School</div>
+            <div class="grid2">2020</div>
+        </div>
+    </section>
+    <section id="skills">
+        <H1><b>SKILLS</b></H1>
+        <h2 style="color: royalblue;"><u>PERSONAL SKILLS</u></h2>
+        <ul class="team1">
+            <li class="t1">Leadership</li>
+            <li class="t1"> Team Work</li>
+            <li class="t1">Ability to learn quickly</li>
+            <li class="t1">Good in Communication</li>
+        </ul>
+        <h2 style="color: chocolate;"><u>TECHNICAL SKILLS</u></h2>
+        <ol class="team2">
+            <li class="t1">C</li>
+            <li class="t1">C++</li>
+            <li class="t1">JAVA</li>
+            <li class="t1">SQL</li>
+            <li class="t1">WEB DEVELOPMENT</li> 
+        </ol>
+<h2 style="color: darkred;"><u>INTEREST</u></h2>
+<ul class="team3">
+    <li class="t1">Programming, Web Development</li>
+    <li class="t1">Hacking</li>
+    <li class="t1">Artificial Intelligence</li>
+</ul>
+<h2 style="color: green;"><u>LANGUAGES</u></h2>
+<ol class="team4">
+    <li class="t1">ENGLISH (full professional proficiency)</li>
+    <li class="t1">TAMIL (native/bilingual proficiency)</li>
+    <li class="t1">MALAYALAM (native/bilingual proficiency)</li>
+    <li class="t1">HINDI (limited working proficiency)</li>
+    <li class="t1">FRENCH (elementary proficiency)</li>
+</ol> 
+<section id="contact">
+    <h1>Contact Me</h1>
+    <div class="cbox">
+    <div class="info"><a href="mailto:shreyassujaya22@gmail.com"><i> shreyassujaaya22.com</i></a></div>
+    <div class="info"><a href="tel:+919486056550"><i>9486056550</i></a></div>
+</div>
+</section>
+
     </body>
 </html>
+
