@@ -10,24 +10,34 @@
 .p1{
     height: 10px;
                 display: flex;
-
+                text-align: center;
                 flex-direction: row;
                 justify-content: space-evenly;
-                padding: 25px;
-                color: rgb(3, 12, 12); 
+                padding: 45px;
+                color:white; 
+                background-color:black;
 }
 .ul{
     display:flex;
     list-style-type: none;
-    
+    color: white;
+    text-align: center;
 }
 .li{
     padding-right: 100px;
     display: inline;
+    color: white;
+    text-align: center;
+    }
+    .aa{
+        
+        text-decoration: none;
+        color: white;
+        text-align: center;
     }
     a{
         text-decoration: none;
-        color: black;
+        color:black
     }
     section {
     padding: 50px 0;
@@ -35,10 +45,18 @@
 .abt1{
 display: flex;
 align-items: center;
-padding: 20px;
+padding: 10px;
 }
 .abt2{
     margin-left: 20px;
+}
+.but{
+    border: double black;
+    padding: 5px 10px;
+    text-align: center ;
+    color: black;
+    margin: 10px 20px;
+    cursor: pointer;
 }
 .grid1{
 display: grid;
@@ -47,26 +65,19 @@ grid-template-rows: 50px 50px;
 gap: 10px;
 background-color: black;
 padding: 10px;
+margin-top: 10px;
 }
 .grid2{
 background-color: antiquewhite;
 text-align: center;
 padding: 20px 0;
 }
-.team1{
-list-style-type: circle;
-}
-.team2{
-list-style-type: upper-roman;
-}
-.team3{
-list-style-type: disc;
-}
-.team4{
-list-style-type: armenian;
-}
 .t1{
     color: black;
+}
+.ski{
+    padding: 100px;
+    background-color: grey;
 }
 .cbox{
     border: 2px solid black;
@@ -79,29 +90,41 @@ list-style-type: armenian;
     <body>
     <nav>
         <div class="p1">
-            
+            <h3 style="padding-right: 300px;">MY PORTFOLIO</h3>   
         <ul class="ul">
-            <li class="li"><a href="#home">HOME</a></li>
-            <li class="li"><a href= '#about'>ABOUT</a></li>
-            <li class="li"><a href="#education">EDUCATION</a></li>
-            <li class="li"><a href="#skills">SKILLS</a></li>
-            <li class="li"><a href="#contact">CONTACT</a></li>
+            
+            <li class="li"><b><a class="aa" href="#home">HOME</a></b></li>
+            <li class="li"><b><a class="aa" href= '#about'>ABOUT</a></b></li>
+            <li class="li"><b><a class="aa" href="#education">EDUCATION</a></b></li>
+            <li class="li"><b><a class="aa" href="#skills">SKILLS</a></b></li>
+            <li class="li"><b><a class="aa" href="#contact">CONTACT</a></b></li>
         </ul>
         </div>
     </nav> 
-    <section id="about">
+    <section id="home">
        
             <div class="abt1"></center>
-        <a href="resume\RESUME1 (1).pdf">
-        <img src="images\OIP.jpeg" alt="pic" width="500px" height="500px" style="border: 10px solid black; padding: 10px; margin: 10px;"></a>
-<div class="abt2">
         
-        <h2>Hi I am Sujaaya. Welcome to my Portfolio</h2>
-    <p><i>I’m Sujaaya J, a Software Engineer, With a passion for Web Development. Over the years, I’ve honed my skills.
+        <img src="images\OIP.jpeg" alt="pic" width="700px" height="700px" style="border: 10px solid black; padding: 10px; margin: 10px;">
+        <div class="abt2">
+            <b style="font-size: 100px;">SUJAAYA J</b>
+            <br>
+            <h2 style="font-size: 50px;">Welcome to My Portfolio</h2>
+            <br>
+        <button class="but"><a href="resume\9486056550.pdf">View Resume</a></button>
+        <button class="but"><a href="resume\RESUME1.docx"> Dowload </a></button>
+           </div> </div></section>
+<section id="about">
+    <div class="abt1">
+        <img src="images\OIP.jpeg" alt="pic" width="500px" height="500px">
+<div class="abt2">
+    <h2 style="font-size: 40px;"><b>HI!! I'm Sujaaya J </b></h2>
+    <p style="font-size: 30px;"><i>I’m a Software Engineer, with a passion for Web Development. Over the years, I’ve honed my skills.
         In addition to my professional endeavors, I enjoy drawing and playing guitar. I find inspiration in yoga and am always seeking opportunities to Grow Personally and Professionally.
         Thank you for visiting my portfolio. I’m excited to connect and explore potential collaborations or opportunities to Web development.</i></p></div>
     </div>
-    </section>
+</section>
+    
     <section id="education" >
         <H1>EDUCATIONAL BACKGROUND</H1>
         <div class="grid1">
@@ -121,43 +144,21 @@ list-style-type: armenian;
     </section>
     <section id="skills">
         <H1><b>SKILLS</b></H1>
-        <h2 style="color: royalblue;"><u>PERSONAL SKILLS</u></h2>
-        <ul class="team1">
-            <li class="t1">Leadership</li>
-            <li class="t1"> Team Work</li>
-            <li class="t1">Ability to learn quickly</li>
-            <li class="t1">Good in Communication</li>
-        </ul>
-        <h2 style="color: chocolate;"><u>TECHNICAL SKILLS</u></h2>
-        <ol class="team2">
-            <li class="t1">C</li>
-            <li class="t1">C++</li>
-            <li class="t1">JAVA</li>
-            <li class="t1">SQL</li>
-            <li class="t1">WEB DEVELOPMENT</li> 
-        </ol>
-<h2 style="color: darkred;"><u>INTEREST</u></h2>
-<ul class="team3">
-    <li class="t1">Programming, Web Development</li>
-    <li class="t1">Hacking</li>
-    <li class="t1">Artificial Intelligence</li>
-</ul>
-<h2 style="color: green;"><u>LANGUAGES</u></h2>
-<ol class="team4">
-    <li class="t1">ENGLISH (full professional proficiency)</li>
-    <li class="t1">TAMIL (native/bilingual proficiency)</li>
-    <li class="t1">MALAYALAM (native/bilingual proficiency)</li>
-    <li class="t1">HINDI (limited working proficiency)</li>
-    <li class="t1">FRENCH (elementary proficiency)</li>
-</ol> 
+        <div class="ski">
+        <div class="abt1">
+            <img src="images\1.png" alt="ne">
+            <div class="abt2"><img src="images\2.png" alt="two"></div>
+        </div></div>
 <section id="contact">
-    <h1>Contact Me</h1>
+    <h1>Contact Details</h1>
+    <center>
     <div class="cbox">
-    <div class="info"><a href="mailto:shreyassujaya22@gmail.com"><i> shreyassujaaya22.com</i></a></div>
-    <div class="info"><a href="tel:+919486056550"><i>9486056550</i></a></div>
-</div>
+        <center>Contact Details</center>
+    <div class="info"><b>Email: </b><a href="mailto:shreyassujaya22@gmail.com"><i> shreyassujaaya22.com</i></a></div>
+    <div class="info"><b>Phn.No: </b><a href="tel:+919486056550"><i> 9486056550</i></a></div>
+    <div class="info"><b>LinkedIn: </b><a href="https://www.linkedin.com/in/sujaaya-jayaraman/"><i> My LinkedIn</i></a></div>
+</center></div>
 </section>
-
     </body>
 </html>
 
