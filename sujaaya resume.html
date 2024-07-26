@@ -13,7 +13,7 @@
                 text-align: center;
                 flex-direction: row;
                 justify-content: space-evenly;
-                padding: 45px;
+                padding: 2rem 0;
                 color:white; 
                 background-color:black;
 }
@@ -79,6 +79,16 @@ padding: 20px 0;
     padding: 100px;
     background-color: grey;
 }
+.container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 20px;
+        }
+        .section {
+            padding: 10px;
+            border: 1px solid black;
+        }
 .cbox{
     border: 2px solid black;
     padding: 20px;
@@ -88,6 +98,7 @@ padding: 20px 0;
         </style>
     </head>
     <body>
+        <header>
     <nav>
         <div class="p1">
             <h3 style="padding-right: 300px;">MY PORTFOLIO</h3>   
@@ -101,6 +112,7 @@ padding: 20px 0;
         </ul>
         </div>
     </nav> 
+</header>
     <section id="home">
        
             <div class="abt1"></center>
@@ -144,13 +156,48 @@ padding: 20px 0;
     </section>
     <section id="skills">
         <H1><b>SKILLS</b></H1>
-        <div class="ski">
-        <div class="abt1">
-            <img src="images\1.png" alt="ne">
-            <div class="abt2"><img src="images\2.png" alt="two"></div>
-        </div></div>
+        <div class="container">
+            <div class="section">
+                <h2>PERSONAL SKILLS</h2>
+                <ul>
+                    <li>Leadership</li>
+                    <li>Team Work</li>
+                    <li>Ability to learn quickly</li>
+                    <li>Good in Communication</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>TECHNICAL SKILLS</h2>
+                <ol>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>JAVA</li>
+                    <li>SQL</li>
+                    <li>WEB DEVELOPMENT</li>
+                </ol>
+            </div>
+            <div class="section">
+                <h2>INTEREST</h2>
+                <ul>
+                    <li>Programming, Web Development</li>
+                    <li>Hacking</li>
+                    <li>Artificial Intelligence</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>LANGUAGES</h2>
+                <ul>
+                    <li>ENGLISH (full professional proficiency)</li>
+                    <li>TAMIL (native/bilingual proficiency)</li>
+                    <li>MALAYALAM (native/bilingual proficiency)</li>
+                    <li>HINDI (limited working proficiency)</li>
+                    <li>FRENCH (elementary proficiency)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 <section id="contact">
-    <h1>Contact Details</h1>
+    <h1 style="font-size: 50px;">Contact Details</h1>
     <center>
     <div class="cbox">
         <center>Contact Details</center>
