@@ -8,15 +8,43 @@
                 background-size: cover;
             }
 .p1{
-    height: 10px;
+    height: 5px;
                 display: flex;
                 text-align: center;
                 flex-direction: row;
                 justify-content: space-evenly;
-                padding: 2rem 0;
                 color:white; 
+                padding: 25px;
                 background-color:black;
 }
+nav {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            
+        }
+        .nav-links {
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            
+            
+        }
+
+        .nav-links li a:hover {
+            background-color: darkgray;
+        }
 .ul{
     display:flex;
     list-style-type: none;
@@ -24,10 +52,11 @@
     text-align: center;
 }
 .li{
-    padding-right: 100px;
+    
     display: inline;
     color: white;
     text-align: center;
+    padding-right: 100px;
     }
     .aa{
         
@@ -38,10 +67,6 @@
     a{
         text-decoration: none;
         color:black
-    }
-    .aa:hover
-    {
-        background-color: darkgray;
     }
     section {
     padding: 50px 0;
@@ -95,9 +120,9 @@ padding: 20px 0;
             background-color: lightyellow;
             box-shadow: 0 4px 8px cornsilk;
             width:700px;
+            transform: translateY(-5px);transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .section:hover {
-
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
         }
 
@@ -120,18 +145,16 @@ padding: 20px 0;
     <body>
         <header>
     <nav>
-        
-        <div class="p1">
-            <h3 style="padding-right: 300px;">MY PORTFOLIO</h3>   
-        <ul class="ul">
+         
+        <ul class="nav-links">
             
-            <li class="li"><b><a class="aa" href="#home">HOME</a></b></li>
-            <li class="li"><b><a class="aa" href= '#about'>ABOUT</a></b></li>
-            <li class="li"><b><a class="aa" href="#education">EDUCATION</a></b></li>
-            <li class="li"><b><a class="aa" href="#skills">SKILLS</a></b></li>
-            <li class="li"><b><a class="aa" href="#contact">CONTACT</a></b></li>
+            <li><b><a class="aa" href="#home">HOME</a></b></li>
+            <li><b><a class="aa" href= '#about'>ABOUT</a></b></li>
+            <li><b><a class="aa" href="#education">EDUCATION</a></b></li>
+            <li><b><a class="aa" href="#skills">SKILLS</a></b></li>
+            <li><b><a class="aa" href="#contact">CONTACT</a></b></li>
         </ul>
-        </div>
+        
     </nav> 
 </header>
     <section id="home">
